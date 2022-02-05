@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bank.controller.AdminCheckUserController">
+   <children>
+      <TableView fx:id="accTable" layoutX="415.0" layoutY="14.0" prefHeight="271.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="accNumber" prefWidth="106.0" text="Account Number" />
+          <TableColumn fx:id="accBalance" prefWidth="177.0" text="Balance" />
+            <TableColumn fx:id="accCurrency" prefWidth="85.0" text="Currency" />
+        </columns>
+      </TableView>
+      <TableView fx:id="transTable" layoutX="14.0" layoutY="14.0" prefHeight="271.0" prefWidth="369.0">
+        <columns>
+          <TableColumn fx:id="transCurrency" prefWidth="56.0" text="Currency" />
+          <TableColumn fx:id="transDate" prefWidth="130.0" text="Date" />
+            <TableColumn fx:id="transReciver" prefWidth="91.0" text="Reciver" />
+            <TableColumn fx:id="transAmount" prefWidth="89.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="342.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="72.0" text="Back" />
+   </children>
+</AnchorPane>
